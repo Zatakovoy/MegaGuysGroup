@@ -1,13 +1,13 @@
 from collections import Counter
 
 
-def calc(x, a, b):
-	s = ""
-	x = int(str(x), a)
-	while x > 0:
-		s += str(x % b)
-		x //= b
-	return s[::-1]
+# def calc(x, a, b):
+# 	s = ""
+# 	x = int(str(x), a)
+# 	while x > 0:
+# 		s += str(x % b)
+# 		x //= b
+# 	return s[::-1]
 
 
 # # 47011
@@ -41,3 +41,17 @@ def calc(x, a, b):
 # 		if (m + a) % n == 0:
 # 			print(k, a)
 # 			break
+
+# from ModuleTest
+
+# def calc(x, a, b):
+# 	s = ""
+# 	x = int(str(x), a)
+# 	while x > 0:
+# 		s += str(x % b)
+# 		x //= b
+# 	return s[::-1]
+#
+#
+# expression = calc(3*216**4 + 2*36**6 - 648, 10, 6)
+# print(Counter(expression))

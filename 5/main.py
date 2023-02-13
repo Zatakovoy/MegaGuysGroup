@@ -148,3 +148,12 @@
 # 	if c > 1028:
 # 		print(n, c)
 
+# from ModuleTest
+
+# for n in range(10000):
+# 	r = bin(n)[2:]
+# 	r += str(r.count("1") % 2)
+# 	r += str(r.count("1") % 2)
+# 	result = int(r, 2)
+# 	if result > 55:
+# 		print(result)

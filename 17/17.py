@@ -78,37 +78,49 @@
 
 # 5802 KP
 # func: int (число) -> int (произведение его цифр)
-def digit_mul(x):
-	answer = 1
-	for digit in str(x):  # 123 (int) -> "123" (str)
-		answer *= int(digit)
-	return answer
-
+# def digit_mul(x):
+# 	answer = 1
+# 	for digit in str(x):  # 123 (int) -> "123" (str)
+# 		answer *= int(digit)
+# 	return answer
+#
 
 # 83*8*
 # max -> 83997
-def satisfies_mask(x: int) -> bool:
-	x = str(x)
-	if (len(x) >= 3) and (x[0] == "8") and (x[1] == "3"):
-		for i in range(2, len(x)):
-			if x[i] == "8":
-				break
-			else:
-				continue
-		else:
-			return False
-	else:
-		return False
-	return True
+# def satisfies_mask(x: int) -> bool:
+# 	x = str(x)
+# 	if (len(x) >= 3) and (x[0] == "8") and (x[1] == "3"):
+# 		for i in range(2, len(x)):
+# 			if x[i] == "8":
+# 				break
+# 			else:
+# 				continue
+# 		else:
+# 			return False
+# 	else:
+# 		return False
+# 	return True
+#
+#
+# arr = [int(x) for x in open("5802_kp.txt")]
+# count = 0
+# maxx = float("-inf")
+# for i in range(len(arr) - 2):
+# 	a, b, c = arr[i], arr[i + 1], arr[i + 2]
+# 	mul = digit_mul(a) * digit_mul(b) * digit_mul(c)
+# 	if mul <= 2*10**9 and satisfies_mask(mul):
+# 		count += 1
+# 		maxx = max(maxx, mul)
+# print(count, maxx)
 
-
-arr = [int(x) for x in open("5802_kp.txt")]
-count = 0
-maxx = float("-inf")
-for i in range(len(arr) - 2):
-	a, b, c = arr[i], arr[i + 1], arr[i + 2]
-	mul = digit_mul(a) * digit_mul(b) * digit_mul(c)
-	if mul <= 2*10**9 and satisfies_mask(mul):
-		count += 1
-		maxx = max(maxx, mul)
-print(count, maxx)
+# arr = [int(x) for x in open("MODULETEST.txt")]
+# count = 0
+# maxx = float("-inf")
+#
+# for i in range(len(arr)):
+# 	for j in range(i + 1, len(arr)):
+# 		a, b = arr[i], arr[j]
+# 		if (a + b) % 10 == 0:
+# 			count += 1
+# 			maxx = max(maxx, a + b)
+# print(count, maxx)
